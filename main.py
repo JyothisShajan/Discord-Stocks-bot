@@ -6,7 +6,7 @@ import yfinance as yf
 import seaborn as sns
 import matplotlib.pyplot as plt
 import json 
-from keep_alive import keep_alive
+
 
 sns.set(style="whitegrid")
 sns.set_palette("deep", 10)
@@ -182,6 +182,6 @@ async def compare(ctx, period, *company):
   
   await ctx.send(file=discord.File('plot.png'))
 
-keep_alive()
+
 my_secret = os.environ['TOKEN']
 bot.run(my_secret)
