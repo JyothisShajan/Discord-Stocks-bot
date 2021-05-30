@@ -178,4 +178,4 @@ async def compare(ctx, period, *company):
   
   await ctx.send(file=discord.File('plot.png'))
 
-bot.run("TOKEN")
+bot.run(TOKEN)
