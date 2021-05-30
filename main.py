@@ -178,5 +178,7 @@ async def compare(ctx, period, *company):
   
   await ctx.send(file=discord.File('plot.png'))
 
-
-bot.run('ODM2NDU1NzQxOTk2NDAwNjUx.YIeQHQ.5QoISSJH3XafRMQTlc7TFbkEMBw')
+with open("token.txt", "r") as f:
+  token = f.read()
+  
+bot.run(token)
