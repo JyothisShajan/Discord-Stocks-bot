@@ -7,7 +7,6 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 import json 
 
-
 sns.set(style="whitegrid")
 sns.set_palette("deep", 10)
 sns.set_context("paper", font_scale = .8)
@@ -15,13 +14,10 @@ sns.set_context("paper", font_scale = .8)
 async def determine_prefix(bot, message):
   with open("prefixes.json", "r") as f:
     prefixes = json.load(f)
-
   return prefixes[str(message.guild.id)]
-
 
 bot = commands.Bot(command_prefix = determine_prefix)
 bot.remove_command('help')
-
 watchlist={}
 
 @bot.event
