@@ -16,8 +16,8 @@ async def determine_prefix(bot, message):
     prefixes = json.load(f)
   return prefixes[str(message.guild.id)]
 
-bot = commands.Bot(command_prefix = determine_prefix)
-bot.remove_command('help')
+bot = commands.Bot(command_prefix = determine_prefix) 
+bot.remove_command('help') 
 watchlist={}
 
 @bot.event
@@ -178,7 +178,5 @@ async def compare(ctx, period, *company):
   
   await ctx.send(file=discord.File('plot.png'))
 
-with open("token.txt", "r") as f:
-  token = f.read()
-  
-bot.run(token)
+
+bot.run(TOKEN)
