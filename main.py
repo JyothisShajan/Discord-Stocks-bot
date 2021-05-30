@@ -179,5 +179,4 @@ async def compare(ctx, period, *company):
   await ctx.send(file=discord.File('plot.png'))
 
 
-my_secret = os.environ['TOKEN']
-bot.run(my_secret)
+bot.run('ODM2NDU1NzQxOTk2NDAwNjUx.YIeQHQ.5QoISSJH3XafRMQTlc7TFbkEMBw')
